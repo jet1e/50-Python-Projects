@@ -3,7 +3,6 @@ import time, os, sys
 from playsound import playsound
 
 def countdown(t):
-    last_min = 0
     for i in range(t, -1, -1):
         minutes = i // 60
         seconds = i % 60
@@ -36,7 +35,5 @@ def main():
         print("Incorrect time")
     
     countdown(t)
-
-print(140 // 60)
 
 main()
